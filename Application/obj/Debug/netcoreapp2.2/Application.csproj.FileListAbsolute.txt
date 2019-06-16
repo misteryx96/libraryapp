@@ -1,0 +1,12 @@
+C:\Users\Giomlly\source\repos\LibraryApp\Application\bin\Debug\netcoreapp2.2\Application.deps.json
+C:\Users\Giomlly\source\repos\LibraryApp\Application\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Giomlly\source\repos\LibraryApp\Application\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\Application\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Giomlly\source\repos\LibraryApp\Application\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\Application\obj\Debug\netcoreapp2.2\Application.csprojAssemblyReference.cache
+C:\Users\Giomlly\source\repos\LibraryApp\Application\obj\Debug\netcoreapp2.2\Application.csproj.CoreCompileInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfoInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\Application\obj\Debug\netcoreapp2.2\Application.AssemblyInfo.cs
+C:\Users\Giomlly\source\repos\LibraryApp\Application\obj\Debug\netcoreapp2.2\Application.csproj.CopyComplete
+C:\Users\Giomlly\source\repos\LibraryApp\Application\obj\Debug\netcoreapp2.2\Application.dll
+C:\Users\Giomlly\source\repos\LibraryApp\Application\obj\Debug\netcoreapp2.2\Application.pdb

@@ -1,0 +1,11 @@
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\bin\Debug\netcoreapp2.2\Domain.runtimeconfig.json
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\bin\Debug\netcoreapp2.2\Domain.runtimeconfig.dev.json
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Giomlly\source\repos\LibraryApp\Domain\obj\Debug\netcoreapp2.2\Domain.pdb

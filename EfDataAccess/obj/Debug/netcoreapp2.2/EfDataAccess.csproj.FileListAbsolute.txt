@@ -1,0 +1,16 @@
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.deps.json
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.runtimeconfig.json
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.runtimeconfig.dev.json
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\EfDataAccess.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.csprojAssemblyReference.cache
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.AssemblyInfoInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.AssemblyInfo.cs
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.csproj.CopyComplete
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\obj\Debug\netcoreapp2.2\EfDataAccess.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfDataAccess\bin\Debug\netcoreapp2.2\Application.pdb

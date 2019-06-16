@@ -1,0 +1,16 @@
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.deps.json
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csprojAssemblyReference.cache
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CoreCompileInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfoInputs.cache
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfo.cs
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CopyComplete
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Giomlly\source\repos\LibraryApp\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.pdb
