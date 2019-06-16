@@ -27,9 +27,25 @@ namespace Api.Controllers
             _addCommand = addCommand;
         }
 
+        /// <summary>
+        /// returns all Users, also can add query to filter result
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///  
+        ///  GET api/users
+        ///  {
+        ///      "firstName" : "Mirko",
+        ///      "lastName" : "Cvetkovic",
+        ///      "userName" : "mirkoCvetkan78"
+        ///  }
+        /// 
+        /// </remarks>
+        /// 
         // GET: api/Users
         [HttpGet]
-        public IActionResult Get([FromQuery]UserSearch search)
+        public ActionResult<IEnumerable<UserDto>> Get([FromQuery]UserSearch search)
         {
             try
             {
@@ -42,6 +58,7 @@ namespace Api.Controllers
             }
         }
 
+        
         // GET: api/Users/5
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
@@ -49,9 +66,27 @@ namespace Api.Controllers
             return "value";
         }
 
+        /// <summary>
+        /// Adds a single user with provided parameters
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// POST api/users 
+        /// {
+        ///     "userName" : "mirko",
+        ///     "firstName" : "Mirko",
+        ///     "lastName" : "Mirkovic",
+        ///     "password" : "sifra123",
+        ///     "roleId" : 2
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // POST: api/Users
         [HttpPost]
-        public IActionResult Post([FromBody] UserDto dto)
+        public ActionResult Post([FromBody] UserDto dto)
         {
             try
             {
@@ -64,9 +99,29 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Updates a single user with provided parameters
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// <param name="id"></param>
+        /// <param name="dto"></param>
+        /// Sample request:
+        /// PUT api/users/2
+        /// {
+        ///     "userName" : "mirko",
+        ///     "firstName" : "Mirko",
+        ///     "lastName" : "Mirkovic",
+        ///     "password" : "sifra123",
+        ///     "roleId" : 2
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // PUT: api/Users/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] UserDto dto)
+        public ActionResult Put(int id, [FromBody] UserDto dto)
         {
             try
             {
@@ -80,9 +135,21 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// deletes a user with provided id
+        /// 
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// <param name="id"></param>
+        /// Sample request:
+        ///  
+        ///  DELETE api/users/4
+        /// 
+        /// </remarks>
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public ActionResult Delete(int id)
         {
             try
             {

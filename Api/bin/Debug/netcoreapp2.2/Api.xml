@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Controllers.BooksController.Get(Application.Searches.BookSearch)">
+            <summary>
+            returns all Books, also can add query to filter result
+            
+            </summary>
+            <remarks>
+            Sample request:
+             
+             GET api/books
+             {
+                 "bookName" = "Na driniCuprija",
+                 "isAvailable" = true,
+                 "genreId" = 2,
+                 "perPage" = 4,
+                 "pageNumber" = 1
+             }
+            
+            </remarks>
+            
+        </member>
+        <member name="M:Api.Controllers.BooksController.Get(System.Int32)">
+            <summary>
+            returns a single Book
+            
+            </summary>
+            
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+             
+             GET api/books/4
+            
+            </remarks>
+        </member>
+        <member name="M:Api.Controllers.BooksController.Post(Application.DTO.BookDto)">
+            <summary>
+            Adds a single book with provided parameters
+            
+            </summary>
+            <remarks>
+            Sample request:
+            POST api/books 
+            {
+                "title" : "Na drini cuprija",
+                "writerId" : "2",
+                "decription" : "skksdkdskdsk",
+                "availableCount" : 2,
+                "count" : 2
+                "selectedGenres" : [
+                    1, 2
+                ]
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.BooksController.Put(System.Int32,Application.DTO.BookDto)">
+            <summary>
+            Updates a book with provided id
+            
+            </summary>
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+            PUT api/books/3
+            {
+                "title" : "Na drini cuprija",
+                "writerId" : "2",
+                "decription" : "skksdkdskdsk",
+                "availableCount" : 2,
+                "count" : 2
+                "selectedGenres" : [
+                    1, 2
+                ]
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.BooksController.Delete(System.Int32)">
+            <summary>
+            deletes a book with provided id
+            
+            </summary>
+            
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+             
+             DELETE api/books/4
+            
+            </remarks>
+        </member>
+        <member name="M:Api.Controllers.ReservationsController.Get(Application.Searches.ReservationSearch)">
+            <summary>
+            returns all Reservations, also can add query to filter result
+            
+            </summary>
+            <remarks>
+            Sample request:
+             
+             GET api/reservations
+             {
+                 "userName" : "mirkoCvetkovic"
+             }
+            
+            </remarks>
+            
+        </member>
+        <member name="M:Api.Controllers.ReservationsController.Get(System.Int32)">
+            <summary>
+            returns a single Reservation
+            
+            </summary>
+            
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+             
+             GET api/reservations/4
+            
+            </remarks>
+        </member>
+        <member name="M:Api.Controllers.ReservationsController.Post(Application.DTO.ReservationDto)">
+            <summary>
+            Adds a single reservaton with provided parameters
+            
+            </summary>
+            <remarks>
+            Sample request:
+            POST api/reservations 
+            {
+                "userId" : 2,
+                "bookReservations" : [
+                    1, 2
+                ]
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.ReservationsController.Put(System.Int32,Application.DTO.ReservationDto)">
+            <summary>
+            Updates a single reservaton with provided parameters
+            
+            </summary>
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+            PUT api/reservations 
+            {
+                "userId" : 2,
+                "bookReservations" : [
+                    1, 2
+                ]
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.ReservationsController.Delete(System.Int32)">
+            <summary>
+            deletes a reservation with provided id
+            
+            </summary>
+            
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+             
+             DELETE api/reservations/4
+            
+            </remarks>
+        </member>
+        <member name="M:Api.Controllers.UsersController.Get(Application.Searches.UserSearch)">
+            <summary>
+            returns all Users, also can add query to filter result
+            
+            </summary>
+            <remarks>
+            Sample request:
+             
+             GET api/users
+             {
+                 "firstName" : "Mirko",
+                 "lastName" : "Cvetkovic",
+                 "userName" : "mirkoCvetkan78"
+             }
+            
+            </remarks>
+            
+        </member>
+        <member name="M:Api.Controllers.UsersController.Post(Application.DTO.UserDto)">
+            <summary>
+            Adds a single user with provided parameters
+            
+            </summary>
+            <remarks>
+            Sample request:
+            POST api/users 
+            {
+                "userName" : "mirko",
+                "firstName" : "Mirko",
+                "lastName" : "Mirkovic",
+                "password" : "sifra123",
+                "roleId" : 2
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.UsersController.Put(System.Int32,Application.DTO.UserDto)">
+            <summary>
+            Updates a single user with provided parameters
+            
+            </summary>
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+            PUT api/users/2
+            {
+                "userName" : "mirko",
+                "firstName" : "Mirko",
+                "lastName" : "Mirkovic",
+                "password" : "sifra123",
+                "roleId" : 2
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            deletes a user with provided id
+            
+            </summary>
+            
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+             
+             DELETE api/users/4
+            
+            </remarks>
+        </member>
+        <member name="M:Api.Controllers.WritersController.Get(Application.Searches.WriterSearch)">
+            <summary>
+            returns all Writers, also can add query to filter result
+            
+            </summary>
+            <remarks>
+            Sample request:
+             
+             GET api/writers
+             {
+                 "Name" : "Ivo Andric"
+             }
+            
+            </remarks>
+            
+        </member>
+        <member name="M:Api.Controllers.WritersController.Get(System.Int32)">
+            <summary>
+            returns a single Writer
+            
+            </summary>
+            
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+             
+             GET api/writers/4
+            
+            </remarks>
+        </member>
+        <member name="M:Api.Controllers.WritersController.Post(Application.DTO.WriterDto)">
+            <summary>
+            Adds a single writer with provided parameters
+            
+            </summary>
+            <remarks>
+            Sample request:
+            POST api/writers 
+            {
+                "name" : "Ivo Andric"
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.WritersController.Put(System.Int32,Application.DTO.WriterDto)">
+            <summary>
+            Adds a single writer with provided parameters
+            
+            </summary>
+            <param name="id"></param>
+            <remarks>
+            Sample request:
+            POST api/writers 
+            {
+                "name" : "Ivo Andric"
+            }
+            
+            </remarks>
+            <response code="201">Returns the newly created item</response>
+            <response code="400">If the item is null</response>
+        </member>
+        <member name="M:Api.Controllers.WritersController.Delete(System.Int32)">
+            <summary>
+            deletes a writer with provided id
+            
+            </summary>
+            
+            <remarks>
+            <param name="id"></param>
+            Sample request:
+             
+             DELETE api/writers/4
+            
+            </remarks>
+        </member>
+    </members>
+</doc>

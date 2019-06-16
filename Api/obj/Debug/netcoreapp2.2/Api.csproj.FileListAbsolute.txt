@@ -21,3 +21,5 @@ C:\Users\Giomlly\source\repos\LibraryApp\Api\obj\Debug\netcoreapp2.2\Api.RazorTa
 C:\Users\Giomlly\source\repos\LibraryApp\Api\obj\Debug\netcoreapp2.2\Api.csproj.CopyComplete
 C:\Users\Giomlly\source\repos\LibraryApp\Api\obj\Debug\netcoreapp2.2\Api.dll
 C:\Users\Giomlly\source\repos\LibraryApp\Api\obj\Debug\netcoreapp2.2\Api.pdb
+C:\Users\Giomlly\source\repos\LibraryApp\Api\bin\Debug\netcoreapp2.2\Api.xml
+C:\Users\Giomlly\source\repos\LibraryApp\Api\obj\Debug\netcoreapp2.2\Api.xml

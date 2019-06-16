@@ -30,18 +30,43 @@ namespace Api.Controllers
             _deleteCommand = deleteCommand;
         }
 
-
+        /// <summary>
+        /// returns all Writers, also can add query to filter result
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///  
+        ///  GET api/writers
+        ///  {
+        ///      "name" : "Ivo Andric"
+        ///  }
+        /// 
+        /// </remarks>
+        /// 
         // GET: api/Writers
         [HttpGet]
-        public IActionResult Get([FromQuery] WriterSearch search) 
+        public ActionResult<IEnumerable<WriterDto>> Get([FromQuery] WriterSearch search) 
         {
             var result = _getCommand.Execute(search);
             return Ok(result);
         }
 
+        /// <summary>
+        /// returns a single Writer
+        /// 
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// <param name="id"></param>
+        /// Sample request:
+        ///  
+        ///  GET api/writers/4
+        /// 
+        /// </remarks>
         // GET: api/Writers/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public ActionResult<WriterDto> Get(int id)
         {
             try
             {
@@ -54,9 +79,23 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Adds a single writer with provided parameters
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// POST api/writers 
+        /// {
+        ///     "name" : "Ivo Andric"
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // POST: api/Writers
         [HttpPost]
-        public IActionResult Post([FromBody] WriterDto dto)
+        public ActionResult Post([FromBody] WriterDto dto)
         {
             try
             {
@@ -69,9 +108,24 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Adds a single writer with provided parameters
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <remarks>
+        /// Sample request:
+        /// POST api/writers 
+        /// {
+        ///     "name" : "Ivo Andric"
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // PUT: api/Writers/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] WriterDto dto)
+        public ActionResult Put(int id, [FromBody] WriterDto dto)
         {
             try
             {
@@ -85,9 +139,22 @@ namespace Api.Controllers
             }
         }
 
+
+        /// <summary>
+        /// deletes a writer with provided id
+        /// 
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// <param name="id"></param>
+        /// Sample request:
+        ///  
+        ///  DELETE api/writers/4
+        /// 
+        /// </remarks>
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public ActionResult Delete(int id)
         {
             try
             {

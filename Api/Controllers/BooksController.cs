@@ -35,10 +35,27 @@ namespace Api.Controllers
 
 
 
-
+        /// <summary>
+        /// returns all Books, also can add query to filter result
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///  
+        ///  GET api/books
+        ///  {
+        ///      "bookName" = "Na driniCuprija",
+        ///      "isAvailable" = true,
+        ///      "genreId" = 2,
+        ///      "perPage" = 4,
+        ///      "pageNumber" = 1
+        ///  }
+        /// 
+        /// </remarks>
+        /// 
         // GET: api/Books
         [HttpGet]
-        public IActionResult Get([FromQuery] BookSearch search)
+        public ActionResult<IEnumerable<BookDto>> Get([FromQuery] BookSearch search)
         {
             var result = _getPagedBooksCommand.Execute(search);
             return Ok(result);
@@ -53,9 +70,22 @@ namespace Api.Controllers
         //    return Ok(result);
         //}
 
+
+        /// <summary>
+        /// returns a single Book
+        /// 
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// <param name="id"></param>
+        /// Sample request:
+        ///  
+        ///  GET api/books/4
+        /// 
+        /// </remarks>
         // GET: api/Books/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public ActionResult<BookDto> Get(int id)
         {
             try
             {
@@ -68,9 +98,31 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Adds a single book with provided parameters
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// POST api/books 
+        /// {
+        ///     "title" : "Na drini cuprija",
+        ///     "writerId" : "2",
+        ///     "decription" : "skksdkdskdsk",
+        ///     "availableCount" : 2,
+        ///     "count" : 2
+        ///     "selectedGenres" : [
+        ///         1, 2
+        ///     ]
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // POST: api/Books
+        
         [HttpPost]
-        public IActionResult Post([FromBody] BookDto dto)
+        public ActionResult Post([FromBody] BookDto dto)
         {
             try
             {
@@ -83,9 +135,32 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// Updates a book with provided id
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// <param name="id"></param>
+        /// <param name="dto"></param>
+        /// Sample request:
+        /// PUT api/books/3
+        /// {
+        ///     "title" : "Na drini cuprija",
+        ///     "writerId" : "2",
+        ///     "decription" : "skksdkdskdsk",
+        ///     "availableCount" : 2,
+        ///     "count" : 2
+        ///     "selectedGenres" : [
+        ///         1, 2
+        ///     ]
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // PUT: api/Books/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] BookDto dto)
+        public ActionResult Put(int id, [FromBody] BookDto dto)
         {
             try
             {
@@ -99,6 +174,18 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// deletes a book with provided id
+        /// 
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// <param name="id"></param>
+        /// Sample request:
+        ///  
+        ///  DELETE api/books/4
+        /// 
+        /// </remarks>
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

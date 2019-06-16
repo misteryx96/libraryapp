@@ -30,9 +30,23 @@ namespace Api.Controllers
             _deleteCommand = deleteCommand;
         }
 
+        /// <summary>
+        /// returns all Reservations, also can add query to filter result
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///  
+        ///  GET api/reservations
+        ///  {
+        ///      "userName" : "mirkoCvetkovic"
+        ///  }
+        /// 
+        /// </remarks>
+        /// 
         // GET: api/Reservations
         [HttpGet]
-        public IActionResult Get([FromQuery]ReservationSearch search)
+        public ActionResult<IEnumerable<ReservationDto>> Get([FromQuery]ReservationSearch search)
         {
             try
             {
@@ -45,9 +59,21 @@ namespace Api.Controllers
             }
         }
 
+        /// <summary>
+        /// returns a single Reservation
+        /// 
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// <param name="id"></param>
+        /// Sample request:
+        ///  
+        ///  GET api/reservations/4
+        /// 
+        /// </remarks>
         // GET: api/Reservations/5
         [HttpGet("{id}")]
-        public IActionResult Get(int id)
+        public ActionResult<ReservationDto> Get(int id)
         {
             try
             {
@@ -60,9 +86,27 @@ namespace Api.Controllers
             }
         }
 
+
+        /// <summary>
+        /// Adds a single reservaton with provided parameters
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        /// POST api/reservations 
+        /// {
+        ///     "userId" : 2,
+        ///     "bookReservations" : [
+        ///         1, 2
+        ///     ]
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // POST: api/Reservations
         [HttpPost]
-        public IActionResult Post([FromBody] ReservationDto dto)
+        public ActionResult Post([FromBody] ReservationDto dto)
         {
             try
             {
@@ -75,9 +119,29 @@ namespace Api.Controllers
             }   
         }
 
+
+        /// <summary>
+        /// Updates a single reservaton with provided parameters
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// <param name="id"></param>
+        /// <param name="dto"></param>
+        /// Sample request:
+        /// PUT api/reservations 
+        /// {
+        ///     "userId" : 2,
+        ///     "bookReservations" : [
+        ///         1, 2
+        ///     ]
+        /// }
+        /// 
+        /// </remarks>
+        /// <response code="201">Returns the newly created item</response>
+        /// <response code="400">If the item is null</response>
         // PUT: api/Reservations/5
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] ReservationDto dto)
+        public ActionResult Put(int id, [FromBody] ReservationDto dto)
         {
             try
             {
@@ -91,9 +155,22 @@ namespace Api.Controllers
             }
         }
 
+
+        /// <summary>
+        /// deletes a reservation with provided id
+        /// 
+        /// </summary>
+        /// 
+        /// <remarks>
+        /// <param name="id"></param>
+        /// Sample request:
+        ///  
+        ///  DELETE api/reservations/4
+        /// 
+        /// </remarks>
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public ActionResult Delete(int id)
         {
             try
             {

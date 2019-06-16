@@ -28,7 +28,6 @@ namespace EfCommands
                     throw new EntityAlreadyExistsException("writer");
                 }   
             }
-
             //writer.Id = (int)request.Id;
             writer.Name = request.Name;
             writer.ModifiedAt = DateTime.Now;
