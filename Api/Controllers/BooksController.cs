@@ -108,9 +108,9 @@ namespace Api.Controllers
         /// {
         ///     "title" : "Na drini cuprija",
         ///     "writerId" : "2",
-        ///     "decription" : "skksdkdskdsk",
+        ///     "description" : "skksdkdskdsk",
         ///     "availableCount" : 2,
-        ///     "count" : 2
+        ///     "count" : 2,
         ///     "selectedGenres" : [
         ///         1, 2
         ///     ]
@@ -120,7 +120,7 @@ namespace Api.Controllers
         /// <response code="201">Returns the newly created item</response>
         /// <response code="400">If the item is null</response>
         // POST: api/Books
-        
+
         [HttpPost]
         public ActionResult Post([FromBody] BookDto dto)
         {
@@ -147,9 +147,9 @@ namespace Api.Controllers
         /// {
         ///     "title" : "Na drini cuprija",
         ///     "writerId" : "2",
-        ///     "decription" : "skksdkdskdsk",
+        ///     "description" : "skksdkdskdsk",
         ///     "availableCount" : 2,
-        ///     "count" : 2
+        ///     "count" : 2,
         ///     "selectedGenres" : [
         ///         1, 2
         ///     ]
