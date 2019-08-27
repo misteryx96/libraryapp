@@ -20,7 +20,6 @@ namespace Api.Controllers
         private IGetReservationCommand _getOne;
         private IUpdateReservationCommand _updateCommand;
         private IDeleteReservationCommand _deleteCommand;
-
         public ReservationsController(IAddReservationCommand addCommand, IGetReserervationsCommand getCommand, IGetReservationCommand getOne, IUpdateReservationCommand updateCommand, IDeleteReservationCommand deleteCommand)
         {
             _addCommand = addCommand;
@@ -86,7 +85,6 @@ namespace Api.Controllers
             }
         }
 
-
         /// <summary>
         /// Adds a single reservaton with provided parameters
         /// 
@@ -118,7 +116,6 @@ namespace Api.Controllers
                 return StatusCode(500, "An error has occured!");
             }   
         }
-
 
         /// <summary>
         /// Updates a single reservaton with provided parameters
@@ -154,7 +151,6 @@ namespace Api.Controllers
                 return StatusCode(409);
             }
         }
-
 
         /// <summary>
         /// deletes a reservation with provided id

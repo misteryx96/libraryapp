@@ -26,16 +26,6 @@ namespace EfCommands
                 throw new Exception();
             }
 
-            //if (!(_context.Genres.Any(g => g.Id == request.GenreId)))
-            //{
-            //    throw new Exception();
-            //}
-
-            //var genres = request.BookGenres.Select(bg => new Domain.Genre
-            //{
-            //    Name = bg
-            //});
-
             var genres = request.SelectedGenres;
 
             var book = new Domain.Book

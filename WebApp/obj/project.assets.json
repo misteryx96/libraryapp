@@ -13241,11 +13241,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\WebApp\\WebApp.csproj",
+      "projectPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\WebApp\\WebApp.csproj",
       "packagesPath": "C:\\Users\\Giomlly\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\WebApp\\obj\\",
+      "outputPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13264,14 +13264,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Api\\Api.csproj": {
-              "projectPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Api\\Api.csproj"
+            "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Api\\Api.csproj": {
+              "projectPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Api\\Api.csproj"
             },
-            "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\EfCommands\\EfCommands.csproj": {
-              "projectPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\EfCommands\\EfCommands.csproj"
+            "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\EfCommands\\EfCommands.csproj": {
+              "projectPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\EfCommands\\EfCommands.csproj"
             },
-            "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\EfDataAccess\\EfDataAccess.csproj": {
-              "projectPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\EfDataAccess\\EfDataAccess.csproj"
+            "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\EfDataAccess\\EfDataAccess.csproj": {
+              "projectPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\EfDataAccess\\EfDataAccess.csproj"
             }
           }
         }

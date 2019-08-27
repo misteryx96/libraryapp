@@ -12,7 +12,6 @@ namespace Domain
         public string Description { get; set; }
         public int AvailableCount { get; set; } //available for Reservation
         public int Count { get; set; } //all books regardless whether reserved or not
-        //public ICollection<int> SelectedGenres { get; set; }
         public ICollection<BookGenre> BookGenres { get; set; }
         public ICollection<BookReservation> BookReservations { get; set; }
     }

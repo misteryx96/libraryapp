@@ -52,8 +52,6 @@ namespace EfCommands
 
                 foreach (Domain.BookGenre bg in selectedGenres)
                 {
-                    //book.BookGenres.Remove(bg);
-                    
                     _context.Entry(bg).State = EntityState.Deleted;
                 }
 

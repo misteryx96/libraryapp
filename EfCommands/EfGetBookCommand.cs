@@ -40,37 +40,6 @@ namespace EfCommands
             }
 
             return book;
-            
-                //.Select(b => new BookDto
-                //{
-                //    Id = b.Id,
-                //    Title = b.Title,
-                //    Writer = b.Writer.Name,
-                //    Description = b.Description,
-                //    AvailableCount = b.AvailableCount,
-                //    Count = b.Count,
-                //    BookGenres = b.BookGenres.Select(bg => bg.Genre.Name)
-                //});
-
-
-
-            //var query = _context.Books.AsQueryable();
-
-            //return query
-            //    .Include(b => b.Writer)
-            //    .ThenInclude(w => w.Name)
-            //    .Include(b => b.BookGenres)
-            //    .ThenInclude(bg => bg.Genre)
-            //    .Select(b => new BookDto
-            //    {
-            //        Id = b.Id,
-            //        Title = b.Title,
-            //        Writer = b.Writer.Name,
-            //        Description = b.Description,
-            //        AvailableCount = b.AvailableCount,
-            //        Count = b.Count,
-            //        BookGenres = b.BookGenres.Select(bg => bg.Genre.Name)
-            //    });
 
         }
     }
