@@ -3628,11 +3628,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Giomlly\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Application\\obj\\",
+      "outputPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3651,8 +3651,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Domain\\Domain.csproj"
+            "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Domain\\Domain.csproj"
             }
           }
         }

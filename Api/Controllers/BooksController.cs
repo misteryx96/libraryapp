@@ -32,9 +32,6 @@ namespace Api.Controllers
             _getPagedBooksCommand = getPagedBooksCommand;
         }
 
-
-
-
         /// <summary>
         /// returns all Books, also can add query to filter result
         /// 
@@ -60,16 +57,6 @@ namespace Api.Controllers
             var result = _getPagedBooksCommand.Execute(search);
             return Ok(result);
         }
-
-        // old - without navigation
-
-        //[HttpGet]
-        //public IActionResult Get([FromQuery] BookSearch search)
-        //{
-        //    var result = _command.Execute(search);
-        //    return Ok(result);
-        //}
-
 
         /// <summary>
         /// returns a single Book

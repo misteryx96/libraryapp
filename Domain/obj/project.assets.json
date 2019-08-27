@@ -3647,11 +3647,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Giomlly\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Giomlly\\source\\repos\\LibraryApp\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Giomlly\\Documents\\GitHub\\libraryapp\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

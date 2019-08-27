@@ -24,13 +24,8 @@ namespace EfCommands
 
             if (!(_context.Writers.Any(w => w.Id == request.WriterId)))
             {
-                throw new Exception(); //IF WRITER OF THAT ID DOES NOT EXIST
+                throw new Exception(); //IF WRITER WITH THAT ID DOES NOT EXIST
             }
-
-            //if(!(_context.Genres.Any(g => g.Name == request.Genre)))
-            //{
-            //    throw new Exception();
-            //}
 
             var book = new Domain.Book
             {
@@ -41,8 +36,6 @@ namespace EfCommands
                 WriterId = request.WriterId,
                 CreatedAt = DateTime.Now
             };
-
-            //var genreId = _context.Genres.Where(g => g.Name == request.Genre).Select(g => g.Id).FirstOrDefault();
 
             var genre = request.Genre;
 
@@ -77,14 +70,6 @@ namespace EfCommands
 
                 bookGenres.Add(bookGenre);
             }
-
-            //var bookGenre1 = new Domain.BookGenre
-            //{
-            //    GenreId = genreId,
-            //    BookId = book.Id
-            //};
-
-            //bookGenre.Add(bookGenre1);
 
                 book.BookGenres = bookGenres;
 

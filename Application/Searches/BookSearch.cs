@@ -11,6 +11,5 @@ namespace Application.Searches
         public int? GenreId { get; set; }
         public int PerPage { get; set; } = 5;
         public int PageNumber { get; set; } = 1;
-        //public int NumberAvailable { get; set; }
     }
 }

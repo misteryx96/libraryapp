@@ -35,10 +35,6 @@ namespace EfCommands
                 isChanged = true;
             if (book.WriterId != request.WriterId)
                 isChanged = true;
-            //if (!(_context.Genres.Any(g => g.Name == request.Genre)))
-            //{
-            //    throw new Exception();
-            //}
 
             if (isChanged)
             {
@@ -50,8 +46,6 @@ namespace EfCommands
                 book.ModifiedAt = DateTime.Now;
 
                 var bookGenreSelected = book.BookGenres;
-
-                //var genreId = _context.Genres.Where(g => g.Name == request.Genre).Select(g => g.Id).FirstOrDefault();
 
                 foreach (Domain.BookGenre bg in bookGenreSelected)
                 {
@@ -98,17 +92,6 @@ namespace EfCommands
 
                 _context.SaveChanges();
 
-                //var bookGenre1 = new Domain.BookGenre
-                //{
-                //    GenreId = genreId,
-                //    BookId = book.Id
-                //};
-
-                //bookGenre.Add(bookGenre1);
-
-                //book.BookGenres = bookGenre;
-
-                //_context.SaveChanges();
             }
         }
     }
